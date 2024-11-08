@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cosas</title>
+</head>
+
+<body>
+    <h1>Hola</h1>
+    <form action="">
+        <fieldset>
+            <legend>Cambia letras con boton</legend>
+            <label for="texto">Escribe</label>
+            <input type="text" id="texto" name="texto"  placeholder="Pon cosas" />
+            <button id="boton" type="button" >Poner mayusculas</button>
+        </fieldset>
+        <fieldset>
+            <legend>Cambia letras automaticamente</legend>
+            <label for="texto">Escribe</label>
+            <input type="text" id="texto" name="texto" onkeyup="mayuscula(this)" placeholder="Pon cosas" />
+            <input type="text" id="texto" name="texto" onkeyup="this.value=this.value.toUpperCase()" placeholder="Pon cosas" />
+        </fieldset>
+
+    </form>
+    <script src="app.js"></script>
+</body>
+
+</html>
